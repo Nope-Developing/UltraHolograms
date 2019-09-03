@@ -2,10 +2,17 @@ package de.nope.ultraholograms.messages;
 
 import de.nope.ultraholograms.Main;
 
+
 public class messages {
-  public static String Version = Main.cfg.getString("VERSION").replace("&", "ง");
-  
-  public static String Prefix = Main.cfg.getString("PREFIX").replace("&", "ง");
-  
-  public static String NoPerms = Main.cfg.getString("NO-PERMISSIONS").replace("&", "ง");
+	
+	
+	
+	 public static String Version = Main.cfg.getString("VERSION").replace("&", "ยง");
+	 public static String Prefix = Main.cfg.getString("PREFIX").replace("&", "ยง");
+	 public static String NoPerms = Main.cfg.getString("NO-PERMISSIONS").replace("&", "ยง");
+	
+	
+	 
+	 
+
 }
