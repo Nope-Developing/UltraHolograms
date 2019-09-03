@@ -1,7 +1,11 @@
 package de.nope.ultraholograms.events;
 
+import de.nope.ultraholograms.Guis.ArmorStandEditor;
+import de.nope.ultraholograms.Main;
+import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.Sound;
+import org.bukkit.entity.ArmorStand;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -10,6 +14,9 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 import de.nope.ultraholograms.Guis.HologrammGUI;
 import de.nope.ultraholograms.Guis.SettingsGUI;
 import de.nope.ultraholograms.hashmaps.EditHash;
+
+import java.util.ArrayList;
+import java.util.UUID;
 
 public class MainguiClick implements Listener {
 	
@@ -20,6 +27,9 @@ public class MainguiClick implements Listener {
 		if (event.getCurrentItem() == null) {
 			
 		} else {
+
+
+
 			if (event.getCurrentItem().getType() == Material.NAME_TAG) {
 				if (event.getWhoClicked() instanceof Player) {
 					Player player = (Player) event.getWhoClicked();

@@ -18,7 +18,7 @@ public class NameEditorChat implements Listener {
       ArmorStand HOLO = (ArmorStand)EditHash.NameStand.get(event.getPlayer());
       
       if (Bukkit.getPluginManager().getPlugin("PlaceholderAPI") == null) {
-    	  String NAME = event.getMessage().replace("&", "ง");
+    	  String NAME = event.getMessage().replace("&", "ยง");
     	  event.getPlayer().playSound(event.getPlayer().getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 100, 3);
           HOLO.setCustomName(NAME);
           event.setCancelled(true);

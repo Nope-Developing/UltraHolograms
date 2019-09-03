@@ -30,7 +30,8 @@ public class CreateHolo  {
 		String NAMERAW = Name;
 		Boolean exists = false;
 		for (String x : Main.cfgholo.getKeys(false)) {
-			if (Main.cfgholo.getString(x+".globalname") == Name) {
+
+			if (Main.cfgholo.getString(x+".globalname").equalsIgnoreCase(Name)) {
 				exists = true;
 			}
 		}
