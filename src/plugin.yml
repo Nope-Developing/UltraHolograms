@@ -1,0 +1,10 @@
+name: UltraHolograms
+version: 1.0
+main: de.nope.ultraholograms.Main
+author: Nope(Nike and Hope)
+api-version: 1.14
+
+commands:
+  uholo:
+    usage:
+    
